@@ -25,12 +25,19 @@ Run a command inside the docker container:
 docker-compose run --rm web [command]
 ```
 
-# Local SetUp
+# Initial Migrations
+```bash
 python rest_api_demo/manage.py makemigrations
 python manage.py migrate --run-syncdb
 
+
 python manage.py makemigrations api
 python manage.py migrate
+
+
+```
+
+
 # Continuous Deployment
 
 Deployment is automated via Travis. When builds pass on the master or qa branch, Travis will deploy that branch to Heroku. Follow these steps to enable this feature.
