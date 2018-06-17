@@ -1,0 +1,12 @@
+site_name: web
+site_description: Django DRF Demo.
+repo_url: https://github.com/pk402/rest_api_demo
+site_dir: site
+copyright: Copyright &copy; 2018, <a href="https://github.com/pk402">pk402</a>.
+dev_addr: 0.0.0.0:8001
+
+pages:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'
